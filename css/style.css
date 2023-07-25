@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
+.custom-cursor {
+    cursor: url('images/mouse.png'), auto;
+}
+
+
 * { 
     font-family: 'Poppins', sans-serif, arial, helvetica;
     margin: 0; 
@@ -58,4 +64,32 @@ body {
 .navbar a:hover, 
 .navbar a.active {
     color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 163, 204, 0.5);
+    pointer-events: none;
+    animation: rippleAnimation 1s linear;
+    z-index: 9999; 
+}
+
+@keyframes rippleAnimation {
+    from {
+        transform: scale(0);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
 }
