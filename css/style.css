@@ -2,23 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Reset and set default styles for all elements on the page. */
-* { 
+* {
     font-family: 'Poppins', sans-serif, arial, helvetica;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none; 
+    text-decoration: none;
     border: none;
-    outline: none; 
+    outline: none;
     scroll-behavior: smooth;
 }
 
 /* Define global variables (CSS custom properties) for colors used in the page. */
 :root {
-    --bg-color: #e0f2ff;   /* Light blue background */
-    --second-bg-color: #c0e0ff;  /* Slightly darker blue for secondary background */
-    --text-color: #333;   /* Dark gray text color */
-    --main-color: #00a3cc; /* Teal color */
+    --bg-color: #e0f2ff;
+    /* Light blue background */
+    --second-bg-color: #c0e0ff;
+    /* Slightly darker blue for secondary background */
+    --text-color: #333;
+    /* Dark gray text color */
+    --main-color: #00a3cc;
+    /* Teal color */
 }
 
 /* Set the base font size to 50% of the default font size. This will affect font sizing on the whole page. */
@@ -29,34 +33,42 @@ html {
 
 /* Set the background color and text color for the body of the page. */
 body {
-    background: var(--bg-color); 
-    color: var(--text-color); 
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* Styling for sections on the page. */
 section {
-    min-height: 100vh; /* Ensure each section is at least the height of the viewport. */
-    padding: 10rem 9% 2rem; /* Set padding for each section. */
+    min-height: 100vh;
+    /* Ensure each section is at least the height of the viewport. */
+    padding: 10rem 9% 2rem;
+    /* Set padding for each section. */
 }
 
 /* Styling for the header section. */
-.header {   
-    position: fixed; /* Fix the header position at the top of the page. */
-    top: 0; 
+.header {
+    position: fixed;
+    /* Fix the header position at the top of the page. */
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%; /* Padding around the header content. */
-    background: var(--bg-color); /* Set the background color for the header. */
+    padding: 2rem 9%;
+    /* Padding around the header content. */
+    background: var(--bg-color);
+    /* Set the background color for the header. */
     display: flex;
-    justify-content: space-between; /* Position logo and menu icon at opposite ends of the header. */
+    justify-content: space-between;
+    /* Position logo and menu icon at opposite ends of the header. */
     align-items: center;
-    z-index: 100; /* Set a high z-index to ensure the header is above other elements. */
+    z-index: 100;
+    /* Set a high z-index to ensure the header is above other elements. */
 }
 
 /* Styling for the logo in the header. */
 .logo {
     font-size: 2.5rem;
-    color: var(--text-color); /* Set the logo color using the custom property. */
+    color: var(--text-color);
+    /* Set the logo color using the custom property. */
     font-weight: 600;
     cursor: default;
 }
@@ -64,21 +76,26 @@ section {
 /* Styling for the navigation links in the header. */
 .navbar {
     font-size: 1.5rem;
-    color: var(--text-color); /* Set the link color using the custom property. */
-    margin-left: 20px; /* Adjust the left margin of each link as needed. */
+    color: var(--text-color);
+    /* Set the link color using the custom property. */
+    margin-left: 20px;
+    /* Adjust the left margin of each link as needed. */
 }
 
 /* Styling for the navigation links when hovered or active. */
-.navbar a:hover, 
+.navbar a:hover,
 .navbar a.active {
-    color: var(--main-color); /* Change the link color when hovered or active using the custom property. */
+    color: var(--main-color);
+    /* Change the link color when hovered or active using the custom property. */
 }
 
 /* Styling for the menu icon. */
 #menu-icon {
     font-size: 2.5rem;
-    color: var(--text-color); /* Set the menu icon color using the custom property. */
-    display: none; /* Initially hide the menu icon. */
+    color: var(--text-color);
+    /* Set the menu icon color using the custom property. */
+    display: none;
+    /* Initially hide the menu icon. */
 }
 
 /* Styling for the ripple effect. */
@@ -90,7 +107,8 @@ section {
     background-color: rgba(0, 163, 204, 0.5);
     pointer-events: none;
     animation: rippleAnimation 1s linear;
-    z-index: 9999; /* Set a high z-index to ensure the ripple is above other elements. */
+    z-index: 9999;
+    /* Set a high z-index to ensure the ripple is above other elements. */
 }
 
 /* Keyframes for the ripple animation. */
@@ -99,6 +117,7 @@ section {
         transform: scale(0);
         opacity: 0.6;
     }
+
     to {
         transform: scale(2);
         opacity: 0;
@@ -107,24 +126,66 @@ section {
 
 /* Styling for the homepage section. */
 .home {
-    display: flex; /* Use flexbox to align content horizontally. */
-    justify-content: center; /* Center content horizontally. */
-    align-items: center; /* Center content vertically. */
+    display: flex;
+    /* Use flexbox to align content horizontally. */
+    justify-content: center;
+    /* Center content horizontally. */
+    align-items: center;
+    /* Center content vertically. */
 }
 
 /* Styling for the image inside the homepage section. */
 .home-img img {
-    width: 35vw; /* Set the width of the image to 35% of the viewport width. */
+    border-radius: 25%;
+    width: 35vw;
+    /* Set the width of the image to 35% of the viewport width. */
 }
 
 /* Styling for the heading (h3) inside the homepage content. */
 .home-content h3 {
-    font-size: 4rem; /* Set the font size for the heading. */
-    font-weight: 500px; /* Set the font weight for the heading. */
+    font-size: 4rem;
+    /* Set the font size for the heading. */
+    font-weight: 500px;
+    /* Set the font weight for the heading. */
 }
 
 /* Styling for the main heading (h1) inside the homepage content. */
 .home-content h1 {
-    line-height: 1.6; /* Set the line height for the main heading. */
-    font-size: 2.7rem; /* Set the font size for the main heading. */
+    line-height: 1.6;
+    /* Set the line height for the main heading. */
+    font-size: 2.7rem;
+    /* Set the font size for the main heading. */
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    /* Set the font size for the paragraph. */
+}
+
+span {
+    color: var(--main-color);
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    background: linear-gradient(to right, teal, royalblue);
+    color: white;
+    font-size: 2.4rem;
+    opacity: 75%;
+    margin: 1rem;
+    transition: ease background-color 1.0s, transform 0.5s;
+    /* Add transitions for background-color and transform */
+}
+
+.social-media a:hover {
+    background: var(--second-bg-color);
+    transform: scale(1.1);
+    /* Slightly increase the size on hover */
+    box-shadow: 0 0 1rem var(--main-color);
 }
