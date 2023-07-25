@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
-.custom-cursor {
-    cursor: url('images/mouse.png'), auto;
-}
-
-
 * { 
     font-family: 'Poppins', sans-serif, arial, helvetica;
     margin: 0; 
@@ -26,12 +20,17 @@
 
 html {
     font-size: 50%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
     background: var(--bg-color); 
     color: var(--text-color); 
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem
 }
 
 .header {   
