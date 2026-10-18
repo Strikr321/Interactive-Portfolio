@@ -4,7 +4,7 @@ import Section from './Section'
 export default function Skills() {
   return (
     <Section id="skills" eyebrow="04 · skills" title="What I work with">
-      <div className="grid gap-8 sm:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {/* Object.entries turns { Languages: [...], Tools: [...] } into [["Languages", [...]], ["Tools", [...]]] */}
         {Object.entries(profile.skills).map(([group, items]) => (
           <div key={group}>

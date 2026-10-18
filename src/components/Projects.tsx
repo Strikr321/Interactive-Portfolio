@@ -31,7 +31,14 @@ export default function Projects() {
               </div>
             </div>
 
-            <h3 className="mt-4 text-xl font-bold text-zinc-900 dark:text-white">{p.name}</h3>
+            <h3 className="mt-4 flex items-center gap-2 text-xl font-bold text-zinc-900 dark:text-white">
+              {p.name}
+              {p.inProgress && (
+                <span className="rounded-full bg-amber-100 px-2 py-0.5 font-mono text-[10px] font-medium text-amber-700 uppercase dark:bg-amber-500/15 dark:text-amber-400">
+                  In progress
+                </span>
+              )}
+            </h3>
             <p className="text-sm text-accent">{p.tagline}</p>
             <p className="mt-3 flex-1 leading-relaxed">{p.description}</p>
 
