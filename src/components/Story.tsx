@@ -18,8 +18,8 @@ export default function Story() {
               <GraduationCap className="size-5 text-accent" />
               <h3 className="mt-3 font-semibold text-zinc-900 dark:text-white">{ed.degree}</h3>
               <p className="text-sm">{ed.school}</p>
-              <p className="mt-1 font-mono text-xs text-zinc-500">{ed.period}</p>
-              <p className="mt-3 text-sm text-zinc-500">{ed.details}</p>
+              <p className="mt-1 font-mono text-xs text-zinc-500 dark:text-zinc-400">{ed.period}</p>
+              <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">{ed.details}</p>
             </div>
           ))}
 
@@ -30,7 +30,7 @@ export default function Story() {
               {profile.certifications.map((c) => (
                 <li key={c.name} className="text-sm">
                   <span className="text-zinc-900 dark:text-white">{c.name}</span>
-                  <span className="block font-mono text-xs text-zinc-500">{c.issuer}</span>
+                  <span className="block font-mono text-xs text-zinc-500 dark:text-zinc-400">{c.issuer}</span>
                 </li>
               ))}
             </ul>

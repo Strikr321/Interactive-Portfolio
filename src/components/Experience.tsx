@@ -13,7 +13,7 @@ export default function Experience() {
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">
                 {job.role} <span className="text-accent">@ {job.company}</span>
               </h3>
-              <span className="font-mono text-xs text-zinc-500">{job.period}</span>
+              <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{job.period}</span>
             </div>
             <ul className="mt-3 list-disc space-y-1.5 pl-5 marker:text-zinc-400">
               {job.points.map((point) => (

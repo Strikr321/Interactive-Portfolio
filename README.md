@@ -23,5 +23,3 @@ src/
   index.css           ← Tailwind import + theme colors
 public/images/        ← photos
 ```
-
-The original plain HTML/CSS version (2023) is saved as the git tag `v1-html`.

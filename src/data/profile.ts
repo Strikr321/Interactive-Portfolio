@@ -45,7 +45,7 @@ export const profile = {
   // The small numbers under the headline
   stats: [
     { value: '178', label: 'Tests passing' },
-    { value: '15', label: 'Week Java bootcamp' },
+    { value: '3', label: 'Full stack apps' },
     { value: '2', label: 'Certifications' },
   ],
 
@@ -138,12 +138,13 @@ export const profile = {
       inProgress: true,
     },
     {
-      name: 'sublok.dev',
+      name: 'tanvir.sublok.dev',
       tagline: 'This portfolio',
       description:
         'The site you’re on. Built with React and TypeScript, styled with Tailwind CSS, animated with Motion, and deployed on Vercel.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       github: 'https://github.com/Strikr321/Interactive-Portfolio',
+      live: 'https://tanvir.sublok.dev',
     },
   ] as Project[],
 

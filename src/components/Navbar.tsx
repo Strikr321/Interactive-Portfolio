@@ -22,7 +22,7 @@ export default function Navbar() {
           <span className="grid size-8 place-items-center rounded-lg bg-accent text-xs text-white dark:text-zinc-950">
             {profile.initials}
           </span>
-          sublok.dev
+          tanvir.sublok.dev
         </a>
 
         {/* Desktop links: hidden on small screens (hidden), shown from the md breakpoint up (md:flex) */}
@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* Mobile: theme toggle and hamburger button */}
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
-          <button onClick={() => setOpen(!open)} aria-label="Toggle menu" className="p-2 text-zinc-700 dark:text-zinc-300">
+          <button onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open} className="p-2 text-zinc-700 dark:text-zinc-300">
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>

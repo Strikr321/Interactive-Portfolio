@@ -16,7 +16,7 @@ export default function Projects() {
           >
             <div className="flex items-start justify-between">
               {/* padStart turns 1 into "01" */}
-              <span className="font-mono text-sm text-zinc-400">{String(i + 1).padStart(2, '0')}</span>
+              <span className="font-mono text-sm text-zinc-500 dark:text-zinc-400">{String(i + 1).padStart(2, '0')}</span>
               <div className="flex gap-3 text-zinc-500">
                 {p.github && (
                   <a href={p.github} target="_blank" rel="noreferrer" aria-label={`${p.name} on GitHub`} className="hover:text-accent">

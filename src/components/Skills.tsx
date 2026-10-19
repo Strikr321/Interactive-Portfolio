@@ -8,7 +8,7 @@ export default function Skills() {
         {/* Object.entries turns { Languages: [...], Tools: [...] } into [["Languages", [...]], ["Tools", [...]]] */}
         {Object.entries(profile.skills).map(([group, items]) => (
           <div key={group}>
-            <h3 className="font-mono text-sm tracking-wider text-zinc-500 uppercase">{group}</h3>
+            <h3 className="font-mono text-sm tracking-wider text-zinc-500 dark:text-zinc-400 uppercase">{group}</h3>
             <ul className="mt-4 flex flex-wrap gap-2">
               {items.map((skill) => (
                 <li

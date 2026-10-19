@@ -43,7 +43,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <footer className="mt-16 text-center font-mono text-xs text-zinc-500">
+      <footer className="mt-16 text-center font-mono text-xs text-zinc-500 dark:text-zinc-400">
         © {YEAR} {profile.name} · Built with React, TypeScript & Tailwind
       </footer>
     </Section>

@@ -58,7 +58,7 @@ export default function Hero() {
               <div key={s.label}>
                 <dt className="sr-only">{s.label}</dt>
                 <dd className="font-mono text-3xl font-bold text-zinc-900 dark:text-white">{s.value}</dd>
-                <dd className="mt-1 text-xs tracking-wider text-zinc-500 uppercase">{s.label}</dd>
+                <dd className="mt-1 text-xs tracking-wider text-zinc-500 dark:text-zinc-400 uppercase">{s.label}</dd>
               </div>
             ))}
           </dl>
@@ -70,6 +70,8 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15 }}
+          width={800}
+          height={800}
           className="order-first mx-auto size-40 rounded-3xl object-cover shadow-2xl ring-1 ring-zinc-200 sm:size-56 md:order-none md:mx-0 md:size-72 dark:ring-zinc-800"
         />
       </div>
